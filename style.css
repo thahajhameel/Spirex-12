@@ -1,0 +1,203 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f4f8fc;
+    color: #263746;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 10px #00000010;
+}
+
+header h2 {
+    color: #087cba;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 22px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #087cba;
+}
+
+.hero {
+    min-height: 380px;
+    display: flex;
+    align-items: center;
+    padding: 60px 10%;
+    background: linear-gradient(120deg, #087cba, #43b5d9);
+    color: white;
+}
+
+.hero h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background: white;
+    color: #087cba;
+    padding: 13px 25px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+section:not(.hero) {
+    padding: 55px 8%;
+    text-align: center;
+}
+
+section h2 {
+    margin-bottom: 25px;
+    color: #087cba;
+}
+
+.service-container,
+.doctor-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service, .doctor {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    width: 220px;
+    box-shadow: 0 3px 15px #00000010;
+}
+
+.service {
+    font-weight: bold;
+}
+
+.doctor-icon {
+    font-size: 55px;
+    margin-bottom: 12px;
+}
+
+.doctor p {
+    color: #087cba;
+    margin-top: 10px;
+}
+
+.subtitle {
+    margin-bottom: 25px;
+    color: #777;
+}
+
+form {
+    background: white;
+    max-width: 550px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 3px 20px #00000012;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    border: 1px solid #d5e0e9;
+    border-radius: 6px;
+    outline: none;
+    font-size: 15px;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #087cba;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 90px;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 6px;
+    background: #087cba;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #056293;
+}
+
+#confirmation {
+    max-width: 550px;
+    margin: 20px auto 0;
+    color: #087cba;
+    font-weight: bold;
+    line-height: 1.8;
+}
+
+footer {
+    background: #12364b;
+    color: white;
+    text-align: center;
+    padding: 35px;
+    line-height: 2;
+}
+
+@media (max-width: 650px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    nav a {
+        margin: 0;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    form {
+        padding: 20px;
+    }
+}

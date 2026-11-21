@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HASHA Hospital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h2>🏥 HASHA Hospital</h2>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#doctors">Doctors</a>
+            <a href="#appointment">Appointment</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div>
+            <h1>Your Health, Our Priority</h1>
+            <p>Quality healthcare and expert doctors, all in one place.</p>
+            <a href="#appointment" class="btn">Book Appointment</a>
+        </div>
+    </section>
+
+    <section class="services">
+        <h2>Our Departments</h2>
+        <div class="service-container">
+            <div class="service">❤️ Cardiology</div>
+            <div class="service">🧠 Neurology</div>
+            <div class="service">🦷 Dentistry</div>
+            <div class="service">🩺 General Medicine</div>
+        </div>
+    </section>
+
+    <section id="doctors">
+        <h2>Our Doctors</h2>
+        <div class="doctor-container">
+            <div class="doctor">
+                <div class="doctor-icon">👨‍⚕️</div>
+                <h3>Dr. Arun Kumar</h3>
+                <p>Cardiologist</p>
+            </div>
+            <div class="doctor">
+                <div class="doctor-icon">👩‍⚕️</div>
+                <h3>Dr. Priya Sharma</h3>
+                <p>Neurologist</p>
+            </div>
+            <div class="doctor">
+                <div class="doctor-icon">👨‍⚕️</div>
+                <h3>Dr. Rahul Raj</h3>
+                <p>General Physician</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="appointment">
+        <h2>Book Your Appointment</h2>
+        <p class="subtitle">Fill in your details to schedule a consultation.</p>
+
+        <form id="appointmentForm">
+            <input type="text" id="name" placeholder="Patient Name" required>
+
+            <input type="email" id="email" placeholder="Email Address" required>
+
+            <input type="tel" id="phone" placeholder="Phone Number"
+                pattern="[0-9]{10}" maxlength="10" required>
+
+            <select id="department" required>
+                <option value="">Select Department</option>
+                <option>Cardiology</option>
+                <option>Neurology</option>
+                <option>Dentistry</option>
+                <option>General Medicine</option>
+            </select>
+
+            <select id="doctor" required>
+                <option value="">Select Doctor</option>
+                <option>Dr. Arun Kumar</option>
+                <option>Dr. Priya Sharma</option>
+                <option>Dr. Rahul Raj</option>
+            </select>
+
+            <input type="date" id="date" required>
+
+            <select id="time" required>
+                <option value="">Select Time</option>
+                <option>09:00 AM</option>
+                <option>10:00 AM</option>
+                <option>11:00 AM</option>
+                <option>02:00 PM</option>
+                <option>04:00 PM</option>
+            </select>
+
+            <textarea id="message" placeholder="Describe your problem (optional)"></textarea>
+
+            <button type="submit">Confirm Appointment</button>
+        </form>
+
+        <div id="confirmation"></div>
+    </section>
+
+    <footer id="contact">
+        <h2>HASHA Hospital</h2>
+        <p>Providing better healthcare for a better tomorrow.</p>
+        <p>Contact: +91 98765 43210</p>
+        <p>© 2026 HASHA Hospital</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
